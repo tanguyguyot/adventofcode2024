@@ -1,4 +1,4 @@
-file = "lists.txt"
+file = "day1/input.txt"
 lists = list(map(int, open(file, encoding="utf-8").read().strip().split()))
 list_left = [lists[idx] for idx in range(len(lists)) if idx % 2 == 0]
 list_right = [lists[idx] for idx in range(len(lists)) if idx % 2 == 1]

@@ -49,7 +49,8 @@ if __name__ == "__main__":
         
     len_safe_reports, safe_reports, len_unsafe_reports, unsafe_reports = get_safe_reports(reports)
     
-    print("Safe reports : ", len_safe_reports)
+    print("Safe reports for star 1 : ", len_safe_reports)
+    # 680
     
     # Part 2 : problem dampener
     # data preparation
@@ -66,5 +67,7 @@ if __name__ == "__main__":
                 break
 
     print("Additional safe reports : ", safe_count)
-    print("Total safe reports : ", len_safe_reports + safe_count)
+    # 30
+    print("Total safe reports, for 2nd star : ", len_safe_reports + safe_count)
+    # 710
     

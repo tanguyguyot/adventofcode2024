@@ -55,12 +55,12 @@ if __name__ == "__main__":
             diagonal_count += 1
     print("Diagonal count :", diagonal_count)
     
-    print("Total count :", vertical_count + horizontal_count + diagonal_count)
+    print("Total count (first star):", vertical_count + horizontal_count + diagonal_count)
+    # 2554
     
     # PART 2 
     
     sliding_window_x = np.lib.stride_tricks.sliding_window_view(matrix_puzzle, (3, 3)).reshape(-1, 3, 3)
-    print(sliding_window_x.shape)
     
     count_x = 0
     for window in sliding_window_x:
@@ -71,7 +71,8 @@ if __name__ == "__main__":
             count_x += 1
         if np.all(matrix_to_check == pattern_x3) or np.all(matrix_to_check == pattern_x4):
             count_x += 1
-    print("Count X :", count_x)
+    print("Count X (second star):", count_x)
+    # 1916
     
     
     

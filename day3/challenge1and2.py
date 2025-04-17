@@ -65,6 +65,7 @@ if __name__ == "__main__":
     
     sum_of_mul = get_sum(mul_tuple_list)
     print("Sum for part 1 : ", sum_of_mul)
+    # 189600467
     
     # PART 2
     
@@ -72,5 +73,6 @@ if __name__ == "__main__":
     mul_tuple_list = mul_list_to_tuple_list_with_dos_dont(get_mul_and_dos_list)
     sum_of_mul = get_sum(mul_tuple_list)
     print("Sum for part 2 : ", sum_of_mul)
+    # 107069718
     
     
